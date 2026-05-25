@@ -1,0 +1,10 @@
+{
+    "gitignore": true,
+    "ignores": [
+        "LICENSE",
+        "CHANGELOG.md"
+    ],
+    "config": {
+        "default": true
+    }
+}
