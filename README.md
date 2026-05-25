@@ -54,7 +54,7 @@ Windows **PowerShell** input:
 ```bash
 E:                             # your local disk letter
 cd E:\
-gh repo create <MY-NEW-PROJECT> --template "x1nv/google-cpp-project-template" --public --clone
+gh repo create <MY-NEW-PROJECT> --template "x1nv/cpp-project-template" --public --clone
 cd <MY-NEW-PROJECT>
 # please update "name" in package.json before executing `npm install` command
 npm install                    # for install Commitizen to Git commit
