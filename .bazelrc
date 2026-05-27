@@ -1,3 +1,6 @@
+# bazel output directory
+startup --output_user_root=C:/bazel_tmp
+
 # cl.exe use 1033 (English) language package
 # you need to install the English language pack in the Visual Studio Installer for it to take effect.
 build --action_env=VSLANG=1033
