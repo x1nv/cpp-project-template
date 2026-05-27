@@ -7,8 +7,7 @@
             "command": "bazel",
             "args": [
                 "build",
-                "--config=debug",
-                "//src/encoding:encoding"
+                "--config=debug"
             ],
             "group": "build",
             "problemMatcher": [
@@ -21,8 +20,7 @@
             "command": "bazel",
             "args": [
                 "build",
-                "--config=release",
-                "//src/encoding:encoding"
+                "--config=release"
             ],
             "group": "build",
             "problemMatcher": [

@@ -1,9 +1,12 @@
+# you need set cc_binary path
+build //src/encoding:encoding
+
 # bazel output directory
 startup --output_user_root=C:/bazel_tmp
 
-# cl.exe use 1033 (English) language package
-# you need to install the English language pack in the Visual Studio Installer for it to take effect.
-build --action_env=VSLANG=1033
+# show more build details
+build --verbose_failures
+build --subcommands
 
 # C/C++ build options
 build --copt=/WX
@@ -24,3 +27,7 @@ build:debug --copt=/MDd
 build:release --compilation_mode=opt
 build:release --copt=-O2
 build:release --copt=/MD
+
+# use clang-cl compiler
+build --extra_toolchains=@local_config_cc//:cc-toolchain-x64_windows-clang-cl
+build --extra_execution_platforms=//src:x64_windows-clang-cl

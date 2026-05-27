@@ -12,7 +12,7 @@ Welcome to your C++ Project Template. This template adheres to the Google Style 
 | .clang-format | `Language` default is `Cpp` |
 | package.json | `name` default is `my-project` |
 | .vscode/tasks.json | definition of how to compile |
-| .bazelrc | compilation options, default is cl.exe configs |
+| .bazelrc | compilation options, default is clang-cl.exe configs |
 | release_version.yml | custom release workflow |
 
 ## You need install VSCode Extension
@@ -22,6 +22,13 @@ Welcome to your C++ Project Template. This template adheres to the Google Style 
 - Bazel
 - Clang-Format
 - EditorConfig
+
+## You need install compile environment
+
+- Visual Studio
+- VSCode
+- Node.js
+- Python
 
 ## Project Directory Structure
 
@@ -45,9 +52,6 @@ Project/
 ```
 
 ## How use this C/C++ project template
-
-> [!TIP]
-> This template uses pre-commit hooks for code linting and commit message validation. To ensure these hooks function correctly, Node.js and npm must be installed on your system, as they are required to run commitlint.
 
 Windows **PowerShell** input:
 
