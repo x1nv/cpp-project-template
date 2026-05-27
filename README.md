@@ -10,6 +10,7 @@ Welcome to your C++ Project Template. This template adheres to the Google Style 
 | main.cc | `<YEAR>` and `<COPYRIGHT HOLDER>` |
 | release_version.yml | `<YEAR>` and `<COPYRIGHT HOLDER>` |
 | .clang-format | `Language` default is `Cpp` |
+| .clangd | `/std:` default is `C++20` |
 | package.json | `name` default is `my-project` |
 | .vscode/tasks.json | definition of how to compile |
 | .bazelrc | compilation options, default is clang-cl.exe configs |
