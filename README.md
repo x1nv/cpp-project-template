@@ -15,6 +15,14 @@ Welcome to your C++ Project Template. This template adheres to the Google Style 
 | .bazelrc | compilation options, default is clang-cl.exe configs |
 | release_version.yml | custom release workflow |
 
+## You need install compile environment
+
+- Visual Studio
+- VSCode
+- Node.js
+- Python
+- LLVM
+
 ## You need install VSCode Extension
 
 - C/C++
@@ -22,13 +30,6 @@ Welcome to your C++ Project Template. This template adheres to the Google Style 
 - Bazel
 - Clang-Format
 - EditorConfig
-
-## You need install compile environment
-
-- Visual Studio
-- VSCode
-- Node.js
-- Python
 
 ## Project Directory Structure
 
