@@ -1,6 +1,3 @@
-# you need set cc_binary path
-build //src/encoding:encoding
-
 # bazel output directory
 startup --output_user_root=C:/bazel_tmp
 
