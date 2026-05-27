@@ -4,11 +4,13 @@ build --action_env=VSLANG=1033
 
 # C/C++ build options
 build --copt=/WX
-build --copt=/W4
+build --copt=/W4                           # warning level
+build --copt=/D_HAS_EXCEPTIONS=0           # disable C++ exception
 
 # C++ exclusive build options
-build --cxxopt=/EHs-c-
-build --cxxopt=/GR-
+build --cxxopt=/EHs-c-                     # disable C++ exception
+build --cxxopt=/GR-                        # disable C++ RTTI
+build --cxxopt=/std:c++23preview
 
 # Debug build options
 build:debug --compilation_mode=dbg

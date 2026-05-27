@@ -12,7 +12,7 @@ Welcome to your C++ Project Template. This template adheres to the Google Style 
 | .clang-format | `Language` default is `Cpp` |
 | package.json | `name` default is `my-project` |
 | .vscode/tasks.json | definition of how to compile |
-| .bazelrc | configure compilation options in the `.bazelrc` file |
+| .bazelrc | compilation options, default is cl.exe configs |
 | release_version.yml | custom release workflow |
 
 ## You need install VSCode Extension
