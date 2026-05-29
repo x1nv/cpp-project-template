@@ -1,0 +1,9 @@
+// Copyright (c) <YEAR> <COPYRIGHT HOLDER>.
+// Licensed under the MIT License.
+
+#ifndef CPP_PROJECT_TEMPLATE_ENCODING_SAY_HELLO_H_
+#define CPP_PROJECT_TEMPLATE_ENCODING_SAY_HELLO_H_
+
+void hello();
+
+#endif  // CPP_PROJECT_TEMPLATE_ENCODING_SAY_HELLO_H_

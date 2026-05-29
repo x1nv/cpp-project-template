@@ -7,7 +7,8 @@ Welcome to your C++ Project Template. This template adheres to the Google Style 
 | File | Config |
 | --- | --- |
 | LICENSE | `<YEAR>` and `<COPYRIGHT HOLDER>` |
-| main.cc | `<YEAR>` and `<COPYRIGHT HOLDER>` |
+| .cc/.h files | `<YEAR>` and `<COPYRIGHT HOLDER>` |
+| BUILD | change linker configs |
 | release_version.yml | `<YEAR>` and `<COPYRIGHT HOLDER>` |
 | .clang-format | `Language` default is `Cpp` |
 | .clangd | `/std:` default is `c++23preview` |

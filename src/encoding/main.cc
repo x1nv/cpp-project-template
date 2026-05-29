@@ -6,6 +6,7 @@
 #include <crtdbg.h>
 #endif
 #include "absl/strings/str_cat.h"
+#include "say_hello.h"
 
 int main() {
   // check heap memory leak
@@ -19,6 +20,7 @@ int main() {
   std::string message = absl::StrCat("hello", " world!");
   std::println("Welcome to this C++ project template!");
   std::println("{}", message);
+  hello();
 
   return 0;
 }
