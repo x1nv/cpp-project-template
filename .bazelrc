@@ -1,5 +1,5 @@
 # bazel output directory
-startup --output_user_root=C:/bazel_tmp
+startup --output_user_root=C:/tmp
 
 # show more build details
 build --verbose_failures
