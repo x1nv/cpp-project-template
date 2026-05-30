@@ -49,7 +49,7 @@ jobs:
             - name: Build Program
               if: ${{ steps.release-please.outputs.release_created }}
               run: |
-                  bazel build --compilation_mode=opt --copt=-O2 //src/encoding:encoding
+                  bazel build //src/encoding:encoding --config=release
 
             - name: Upload Release Artifacts
               if: ${{ steps.release-please.outputs.release_created }}

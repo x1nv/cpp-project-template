@@ -26,8 +26,11 @@ build:release --copt=/clang:-O3
 build:release --copt=/MD
 
 # VPN, if you are in the chinese mainland, you may need to set it up.
-build --repo_env=HTTPS_PROXY=http://127.0.0.1:10808
-build --action_env=HTTPS_PROXY=http://127.0.0.1:10808
+# Warning: CI/CD deployment is unavailable. It must be commented out
+# during workflow runtime, otherwise the network connection will fail.
+#
+# build --repo_env=HTTPS_PROXY=http://127.0.0.1:10808
+# build --action_env=HTTPS_PROXY=http://127.0.0.1:10808
 
 # use clang-cl compiler
 build --extra_toolchains=@local_config_cc//:cc-toolchain-x64_windows-clang-cl
