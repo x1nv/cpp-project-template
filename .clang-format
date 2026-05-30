@@ -7,8 +7,8 @@ DerivePointerAlignment: false
 PointerAlignment: Left
 AlignConsecutiveAssignments: true
 AlignConsecutiveMacros: true
-AllowShortBlocksOnASingleLine: true
-AllowShortFunctionsOnASingleLine: All
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
 SortIncludes: true
 ColumnLimit: 80
 ...
