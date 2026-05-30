@@ -59,14 +59,15 @@ Project/
 Windows **PowerShell** input:
 
 ```bash
-cd /d E:\                      # your local disk letter
+cd /d E:\                                 # your local disk letter
 gh repo create <MY-NEW-PROJECT> --template "x1nv/cpp-project-template" --public --clone
 cd <MY-NEW-PROJECT>
 # please update "name" in package.json before executing `npm install` command
-npm install                    # for install Commitizen to Git commit
-pip install pre-commit         # if not previously installed
-pre-commit install --hook-type commit-msg
-code .                         # launch vscode
+npm install                               # for install Commitizen to Git commit
+pip install pre-commit                    # if not previously installed
+pre-commit install                        # install pre-commit hook
+pre-commit install --hook-type commit-msg # install commit-msg hook
+code .                                    # launch vscode
 ```
 
 ## Hot use Commitizen to Git commit
