@@ -65,7 +65,7 @@ def add_load_cc_library(filename):
     with open(filename, "w", encoding="utf-8") as f:
         f.write(content)
 
-def find_substr(content, substr, flags = 0) -> int:
+def find_substr(content, substr, flags = 0):
     match = re.search(substr, content, flags)
     if not match:
         raise ValueError(f"not found content: '{substr}'")
