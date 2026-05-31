@@ -9,11 +9,11 @@ Welcome to your C++ Project Template. This template adheres to the Google Style 
 | LICENSE | `<YEAR>` and `<COPYRIGHT HOLDER>` |
 | .cc/.h files | `<YEAR>` and `<COPYRIGHT HOLDER>` |
 | release_version.yml | `<YEAR>` and `<COPYRIGHT HOLDER>` |
-| BUILD | change linker configs |
 | .clang-format | `Language` default is `Cpp` |
 | .clangd | `/std:` default is `c++23preview` |
-| .vscode/tasks.json | definition of how to compile |
+| BUILD | change linker configs |
 | .bazelrc | compilation options, default is clang-cl.exe configs |
+| .vscode/tasks.json | definition of how to compile |
 | release_version.yml | custom release workflow |
 
 ## You need install compile environment
