@@ -3,7 +3,7 @@
 
 #ifdef _DEBUG
 #include <crtdbg.h>
-#endif
+#endif  // _DEBUG
 
 #include <print>
 
