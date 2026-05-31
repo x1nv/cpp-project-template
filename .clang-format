@@ -5,7 +5,6 @@ IndentWidth: 2
 Language: Cpp
 DerivePointerAlignment: false
 PointerAlignment: Left
-AlignConsecutiveAssignments: true
 AlignConsecutiveMacros: true
 AllowShortBlocksOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Empty
