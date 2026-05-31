@@ -116,16 +116,17 @@ if __name__ == "__main__":
         print("Create file failed, Usage: python tools/newcc.py <filename>")
         sys.exit(1)
 
-    create_files(sys.argv[1])
-    build_path = find_build_file(sys.argv[1])
+    filename = sys.argv[1]
+    create_files(filename)
+    build_path = find_build_file(filename)
 
     # ask user whether to automatically add cc_library to BUILD (case-insensitive)
     print(f"Automatically identified BUILD file path: {build_path}")
     answer = input("Do you want to automatically add cc_library to BUILD file? (y/n): ").strip().lower()
     if answer in ('y', 'yes'):
         add_load_cc_library(build_path)
-        add_cc_library(build_path, sys.argv[1])
-        apply_cc_library(build_path, sys.argv[1])
+        add_cc_library(build_path, filename)
+        apply_cc_library(build_path, filename)
     else:
         print("Skipped automatic BUILD modification. Files created but not added to BUILD.")
     print("Created successfully")
