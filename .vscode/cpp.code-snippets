@@ -6,13 +6,15 @@
 			" public:",
 			"  explicit ${1:ClassName}(${2:params});",
 			"  ${1:ClassName}(const ${1:ClassName}&) = delete;",
+			"  ${1:ClassName}(${1:ClassName}&&) = delete;",
 			"  ${1:ClassName}& operator=(const ${1:ClassName}&) = delete;",
+			"  ${1:ClassName}& operator=(${1:ClassName}&&) = delete;",
 			"",
 			" private:",
 			"  $0",
 			"};  // ${1:ClassName}"
 		],
-		"description": "Create a final class (copy deleted, move enabled)"
+		"description": "Create a final class (copy and move deleted)"
 	},
 	"Google Style Namespace": {
 		"prefix": "nspace",
