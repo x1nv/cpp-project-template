@@ -81,3 +81,12 @@ cz
 ```bash
 python3 tools/newcc.py <filename> # Example: python3 tools/newcc.py src/encoding/failed_exit
 ```
+
+## VSCode Code Snippets
+
+This project includes custom C++ code snippets in `.vscode/cpp.code-snippets`. Type the prefix in a `.cc`/`.h` file and press `Tab` or `Enter` to expand.
+
+| Prefix | Description |
+| --- | --- |
+| `newclass` | Create a `final` class with deleted copy constructor/assignment |
+| `nspace` | Create a Google-style namespace block with closing comment |

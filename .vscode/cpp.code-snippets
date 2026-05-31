@@ -1,0 +1,28 @@
+{
+	"Non-Copyable Final Class": {
+		"prefix": "newclass",
+		"body": [
+			"class ${1:ClassName} final {",
+			" public:",
+			"  explicit ${1:ClassName}(${2:params});",
+			"  ${1:ClassName}(const ${1:ClassName}&) = delete;",
+			"  ${1:ClassName}& operator=(const ${1:ClassName}&) = delete;",
+			"",
+			" private:",
+			"  $0",
+			"};  // ${1:ClassName}"
+		],
+		"description": "Create a final class (copy deleted, move enabled)"
+	},
+	"Google Style Namespace": {
+		"prefix": "nspace",
+		"body": [
+			"namespace ${1:name} {",
+			"",
+			"$0",
+			"",
+			"}  // namespace ${1:name}"
+		],
+		"description": "Create a Google-style namespace block"
+	}
+}
