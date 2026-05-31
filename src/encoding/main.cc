@@ -14,7 +14,7 @@ int main() {
   _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 #endif
 
-  // set utf-8 encoding
+  // set utf-8 character sets
   // ...
 
   std::string message = absl::StrCat("hello", " world!");
