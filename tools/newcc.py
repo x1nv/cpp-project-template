@@ -114,6 +114,8 @@ def apply_cc_library(build_path, filename):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Create file failed, Usage: python tools/newcc.py <filename>")
+        sys.exit(1)
+
     create_files(sys.argv[1])
     build_path = find_build_file(sys.argv[1])
 
