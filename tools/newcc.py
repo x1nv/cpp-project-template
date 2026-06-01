@@ -42,7 +42,7 @@ def create_files(filename):
         f.write(f"{create_guard_define(filename)}")
     with open(cc_path, "w") as f:
         f.write(LICENSE_HEADER)
-        f.write(f"#include \"{path.name}.h\"")
+        f.write(f"#include \"{filename}.h\"")
 
 # find BUILD
 def find_build_file(filename):
@@ -65,11 +65,11 @@ def add_load_cc_library(filename):
     with open(filename, "w", encoding="utf-8") as f:
         f.write(content)
 
-def find_substr(content, substr, flags = 0):
-    match = re.search(substr, content, flags)
-    if not match:
+def find_substr(content, substr, pos = 0):
+    try:
+        return content.index(substr, pos)
+    except ValueError:
         raise ValueError(f"not found content: '{substr}'")
-    return match
 
 def calculate_relative_path(parent_path, file_path) -> str:
     abs_parent_dir = Path(parent_path).absolute().parent
@@ -86,7 +86,7 @@ def add_cc_library(build_path, filename):
     relative_path = calculate_relative_path(build_path, filename)
 
     # insert this cc_library before the cc_binary
-    insert_pos = find_substr(content, r"cc_binary\(").start()
+    insert_pos = find_substr(content, "cc_binary(")
     cc_library_rule = (
         f"cc_library(\n"
         f"    name = \"{Path(filename).name}\",\n"
@@ -105,7 +105,9 @@ def apply_cc_library(build_path, filename):
         content = f.read()
 
     # find 'deps = [' on cc_binary
-    insert_pos = find_substr(content, r"cc_binary.*?deps.*?\[",  re.DOTALL).end()
+    cc_binary_pos = find_substr(content, "cc_binary(")
+    deps = "deps = ["
+    insert_pos = find_substr(content, deps, cc_binary_pos) + len(deps)
     content = content[:insert_pos] + f'\n        ":{Path(filename).name}", ' + content[insert_pos:]
 
     with open(build_path, "w", encoding="utf-8") as f:
