@@ -59,7 +59,7 @@ Project/
 Windows **PowerShell** input:
 
 ```bash
-cd /d E:\                                 # your local disk letter
+cd E:\                                    # your local disk letter
 gh repo create <MY NEW PROJECT> --template "x1nv/cpp-project-template" --public --clone
 cd <MY NEW PROJECT>
 npm install                               # for install Commitizen to Git commit
