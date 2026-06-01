@@ -73,7 +73,7 @@ code .                                    # launch vscode
 
 ```bash
 git add .
-cz
+npx cz
 ```
 
 ## Quickly create .h/.cc files
