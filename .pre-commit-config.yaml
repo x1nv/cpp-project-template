@@ -3,6 +3,8 @@ repos:
     rev: 2.0.0
     hooks:
       - id: cpplint
+        args:
+          - --filter=-whitespace/indent_namespace
   - repo: local
     hooks:
       - id: commitlint
