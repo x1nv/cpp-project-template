@@ -10,4 +10,5 @@ AllowShortBlocksOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Empty
 SortIncludes: true
 ColumnLimit: 80
+BinPackArguments: false
 ...

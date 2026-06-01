@@ -5,5 +5,7 @@
     // This guarantees extensions load completely first, eliminating stale "environment changed" warnings.
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
-    "terminal.integrated.hideOnStartup": "always"
+    "terminal.integrated.hideOnStartup": "always",
+    // Disable inlay hints globally to reduce visual clutter, especially in code-dense files.
+    "editor.inlayHints.enabled": "off"
 }
