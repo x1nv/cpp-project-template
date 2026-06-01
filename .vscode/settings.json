@@ -1,3 +1,9 @@
 {
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    // Prevent terminal auto-spawning on startup to fix environment sync race conditions.
+    // NOTE: For Claude Code for VS Code, wait until its icon appears on the left sidebar before creating a new terminal.
+    // This guarantees extensions load completely first, eliminating stale "environment changed" warnings.
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.hideOnStartup": "always"
 }
