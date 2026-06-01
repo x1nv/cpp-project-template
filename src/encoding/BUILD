@@ -10,9 +10,9 @@ cc_library(
 cc_binary(
     name = "main",
     srcs = ["main.cc"],
+    malloc = "@mimalloc",
     deps = [
         ":say_hello",
         "@abseil-cpp//absl/strings",
-        "@mimalloc",
     ],
 )
