@@ -3,16 +3,16 @@ load("@rules_cc//cc:cc_library.bzl", "cc_library")
 
 cc_library(
     name = "say_hello",
+    srcs = ["say_hello.cc"],
     hdrs = ["say_hello.h"],
-    srcs =  ["say_hello.cc"],
 )
 
 cc_binary(
-    name = "encoding",
+    name = "main",
     srcs = ["main.cc"],
     deps = [
         ":say_hello",
-        "@mimalloc//:mimalloc",
-        "@abseil-cpp//absl/strings"
+        "@abseil-cpp//absl/strings",
+        "@mimalloc",
     ],
 )

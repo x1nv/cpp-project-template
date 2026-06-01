@@ -7,7 +7,7 @@
             "command": "bazel",
             "args": [
                 "build",
-                "//src/encoding:encoding", // set your BUILD
+                "//src/encoding:main", // set your BUILD
                 "--config=debug"
             ],
             "group": "build",
@@ -21,7 +21,7 @@
             "command": "bazel",
             "args": [
                 "build",
-                "//src/encoding:encoding", // set your BUILD
+                "//src/encoding:main", // set your BUILD
                 "--config=release"
             ],
             "group": "build",
@@ -36,7 +36,7 @@
             "command": "bazel",
             "args": [
                 "build",
-                "//src/encoding:encoding" // set your BUILD
+                "//src/encoding:main" // set your BUILD
             ]
         },
         // Use the official Bazel-recommended compile_commands.
