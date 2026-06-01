@@ -4,7 +4,7 @@ repos:
     hooks:
       - id: cpplint
         args:
-          - --filter=-whitespace/indent_namespace
+          - --filter=-whitespace/indent_namespace,-build/header_guard
   - repo: local
     hooks:
       - id: commitlint
