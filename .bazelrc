@@ -7,7 +7,6 @@ build --subcommands
 
 # C/C++ build options
 build --copt=/WX
-build --copt=/W4                           # warning level
 build --copt=/D_HAS_EXCEPTIONS=0           # disable C++ exception
 
 # C++ exclusive build options
@@ -19,11 +18,13 @@ build --cxxopt=/std:c++23preview
 build:debug --compilation_mode=dbg
 build:debug --copt=/D_DEBUG
 build:debug --copt=/MDd
+build:debug --copt=/W3                     # warning level 3
 
 # Release build options
 build:release --compilation_mode=opt
 build:release --copt=/clang:-O3
 build:release --copt=/MD
+build:release --copt=/W4                   # warning level 4
 
 # VPN, if you are in the chinese mainland, you may need to set it up.
 # Warning: CI/CD deployment is unavailable. It must be commented out
