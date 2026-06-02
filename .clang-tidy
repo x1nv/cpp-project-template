@@ -8,8 +8,7 @@ Checks: >
   performance-*,
   readability-*,
   -modernize-use-trailing-return-type,
-  -performance-no-int-to-ptr,
-  -google-build-using-namespace
+  -performance-no-int-to-ptr
 
 WarningsAsErrors: "*"
 HeaderFilterRegex: "^(src|include)/.*"
