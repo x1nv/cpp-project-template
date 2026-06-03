@@ -1,6 +1,6 @@
 # C++ Project Template
 
-Welcome to your C++ Project Template. This template adheres to the Google Style Guide and utilizes the Bazel framework.
+Writing a Google-style LLVM C++ project template with Bazel using VS Code on Windows.
 
 ## You need change template files
 
