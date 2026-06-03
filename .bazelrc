@@ -28,7 +28,7 @@ build:release --copt=/W4                   # warning level 4
 
 # Administrator launch
 #
-# build --linkopt=/MANIFEST
+# build --linkopt=/MANIFEST:EMBED
 # build --linkopt=/MANIFESTUAC:"level='requireAdministrator'
 
 # VPN, if you are in the chinese mainland, you may need to set it up.
