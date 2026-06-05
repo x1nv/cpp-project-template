@@ -36,6 +36,9 @@ build:release --copt=/clang:-flto=full     # LTO
 # build --linkopt=/MANIFEST:EMBED
 # build --linkopt=/MANIFESTUAC:"level='requireAdministrator'
 
+build --linkopt=/DYNAMICBASE               # ASLR (Address Space Layout Randomization)
+build --linkopt=/NXCOMPAT                  # DEP (Data Execution Prevention)
+
 # VPN, if you are in the chinese mainland, you may need to set it up.
 # Warning: CI/CD deployment is unavailable. It must be commented out
 # during workflow runtime, otherwise the network connection will fail.
