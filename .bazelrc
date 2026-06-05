@@ -8,6 +8,10 @@ build --subcommands
 # C/C++ build options
 build --copt=/WX
 build --copt=/D_HAS_EXCEPTIONS=0           # disable C++ exception
+build --copt=/std:c17
+build --copt=/GS-
+build --copt=/guard:cf-
+build --copt=/arch:AVX2
 
 # C++ exclusive build options
 build --cxxopt=/EHs-c-                     # disable C++ exception
@@ -25,6 +29,7 @@ build:release --compilation_mode=opt
 build:release --copt=/clang:-O3
 build:release --copt=/MD
 build:release --copt=/W4                   # warning level 4
+build:release --copt=/clang:-flto=full     # LTO
 
 # Administrator launch
 #
