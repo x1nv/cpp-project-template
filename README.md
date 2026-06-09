@@ -9,7 +9,6 @@ Writing a Google-style LLVM C++ project template with Bazel using VS Code on Win
 | LICENSE | `<YEAR>` and `<COPYRIGHT HOLDER>` |
 | .cc/.h files | `<YEAR>` and `<COPYRIGHT HOLDER>` |
 | release_version.yml | `<YEAR>` and `<COPYRIGHT HOLDER>` |
-| .clang-format | `Language` default is `Cpp` |
 | .clangd | `/std:` default is `c++23preview` |
 | BUILD | change linker configs |
 | .bazelrc | compilation options, default is clang-cl.exe configs |

@@ -7,5 +7,24 @@
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.hideOnStartup": "always",
     // Disable inlay hints globally to reduce visual clutter, especially in code-dense files.
-    "editor.inlayHints.enabled": "off"
+    "editor.inlayHints.enabled": "off",
+    "files.exclude": {
+        "**/.cache": true,
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/bazel-*/": true,
+        "**/tools/": true,
+        "**/.clang-format": true,
+        "**/.clang-tidy": true,
+        "**/.editorconfig": true,
+        "**/.gitattributes": true,
+        "**/.gitignore": true,
+        "**/.pre-commit-config.yaml": true,
+        "**/compile_commands.json": true,
+        "**/commitlint.config.js": true,
+        "**/MODULE.bazel.lock": true,
+        "**/package-lock.json": true,
+        "**/package.json": true,
+        "**/external/": true
+    }
 }
