@@ -6,7 +6,6 @@ build --verbose_failures
 build --subcommands
 
 # C/C++ build options
-build --copt=/WX
 build --copt=/D_HAS_EXCEPTIONS=0           # disable C++ exception
 build --copt=/std:c17
 build --copt=/GS-
@@ -29,6 +28,7 @@ build:release --compilation_mode=opt
 build:release --copt=/clang:-O3
 build:release --copt=/MD
 build:release --copt=/W4                   # warning level 4
+build:release --copt=/WX
 build:release --copt=/clang:-flto=full     # LTO
 
 # Administrator launch
@@ -38,6 +38,9 @@ build:release --copt=/clang:-flto=full     # LTO
 
 build --linkopt=/DYNAMICBASE               # ASLR (Address Space Layout Randomization)
 build --linkopt=/NXCOMPAT                  # DEP (Data Execution Prevention)
+
+# link .lib
+# build --linkopt=/DEFAULTLIB:???.lib
 
 # VPN, if you are in the chinese mainland, you may need to set it up.
 # Warning: CI/CD deployment is unavailable. It must be commented out
