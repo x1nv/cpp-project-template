@@ -7,5 +7,8 @@
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.hideOnStartup": "always",
     // Disable inlay hints globally to reduce visual clutter, especially in code-dense files.
-    "editor.inlayHints.enabled": "off"
+    "editor.inlayHints.enabled": "off",
+    "editor.rulers": [
+        80
+    ]
 }
