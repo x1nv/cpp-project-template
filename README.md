@@ -61,6 +61,7 @@ Windows **PowerShell** input:
 cd E:\                                    # your local disk letter
 gh repo create <MY NEW PROJECT> --template "x1nv/cpp-project-template" --public --clone
 cd <MY NEW PROJECT>
+npx npm-check-updates -u                  # update packages
 npm install                               # for install Commitizen to Git commit
 pip install pre-commit                    # if not previously installed
 pre-commit install                        # install pre-commit hook
