@@ -6,4 +6,3 @@ platform(
         "@bazel_tools//tools/cpp:clang-cl",
     ],
 )
-
