@@ -1,13 +1,15 @@
-
+// Copyright (c) <YEAR> <COPYRIGHT HOLDER>.
+// Licensed under the MIT License.
 
 #ifdef _DEBUG
 #include <crtdbg.h>
 #endif  // _DEBUG
 
 #include <print>
+#include <string>
 
 #include "absl/strings/str_cat.h"
-#include "say_hello.h"
+#include "src/encoding/say_hello.h"
 
 int main() {
   // check heap memory leak
