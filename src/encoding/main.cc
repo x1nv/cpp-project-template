@@ -1,5 +1,4 @@
-// Copyright (c) <YEAR> <COPYRIGHT HOLDER>.
-// Licensed under the MIT License.
+
 
 #ifdef _DEBUG
 #include <crtdbg.h>
