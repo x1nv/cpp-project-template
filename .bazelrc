@@ -34,7 +34,7 @@ build:release --copt=/clang:-flto=full     # LTO
 # Administrator launch
 #
 # build --linkopt=/MANIFEST:EMBED
-# build --linkopt=/MANIFESTUAC:"level='requireAdministrator'
+# build --linkopt=/MANIFESTUAC:"level='requireAdministrator'"
 
 build --linkopt=/DYNAMICBASE               # ASLR (Address Space Layout Randomization)
 build --linkopt=/NXCOMPAT                  # DEP (Data Execution Prevention)
