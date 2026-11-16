@@ -1,5 +1,5 @@
 CompileFlags:
   Add:
-    - "/std:c++23preview"
+    - "-std=c++23"
     - "-xc++"
     - "-D_DEBUG"

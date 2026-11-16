@@ -15,7 +15,7 @@ build --copt=/arch:AVX2
 # C++ exclusive build options
 build --cxxopt=/EHs-c-                     # disable C++ exception
 build --cxxopt=/GR-                        # disable C++ RTTI
-build --cxxopt=/std:c++23preview
+build --cxxopt=/clang:-std=c++23
 
 # Debug build options
 build:debug --compilation_mode=dbg
